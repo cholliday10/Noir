@@ -23,7 +23,8 @@ public class NewCoin : MonoBehaviour
         if (whatDidIHit.tag == "Player")
         {
             Destroy(this.gameObject);
-            whatDidIHit.GetComponent<GameManager>().AddScore(1);
+            whatDidIHit.GetComponent<PlayerController>().GainACoin();
+            Debug.Log("scored");
          
 
 
